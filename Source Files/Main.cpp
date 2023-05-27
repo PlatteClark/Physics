@@ -1,8 +1,11 @@
-#include "ParticleTest.h"
+#include "../Source Files/Tests/ParticleTest.h"
+#include "../Source Files/Tests/ForceTest.h"
+#include "../Source Files/Tests/JointTest.h"
+#include "../Source Files/Tests/CollisionTest.h"
 
 int main(int argc, char* argv[]) 
 {
-	Test* test = new ParticleTest();
+	Test* test = new CollisionTest();
 	test->Initialize();
 
 	while (!test->IsQuit())
